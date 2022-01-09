@@ -25,3 +25,6 @@ bar {
 ```
 
 It's important to set the fonts to nerd fonts so that all of the icons  used in the status bar will be shown correctly.
+
+Make sure you copy the file to the under the $HOME/.config/i3 folder. Alternatively you can create a soft link to from the repo to the config directory
+
