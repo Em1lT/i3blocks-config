@@ -24,4 +24,4 @@ bar {
 }
 ```
 
-It's important to set teh fonr to nerd fonts so that all of the icons will be available.
+It's important to set the fonts to nerd fonts so that all of the icons  used in the status bar will be shown correctly.
