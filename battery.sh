@@ -1,7 +1,9 @@
 #!/bin/bash
 
 BAT=$(cat /sys/class/power_supply/BAT1/capacity)
+STAT=$(cat /sys/class/power_supply/BAT1/status)
 STR=""
+RCH=""
 
 if [ $BAT -gt 90 ]
 then
@@ -20,4 +22,11 @@ then
     STR=" "
 fi
 
-echo "$STR $BAT %"
+if [ $STAT = "Charging" ]
+then
+    RCH=" "
+else
+    RCH=" "
+fi
+
+echo -e " $RCH $STR $BAT %"
