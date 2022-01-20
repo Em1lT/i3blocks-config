@@ -24,9 +24,9 @@ fi
 
 if [ $STAT = "Charging" ]
 then
-    RCH=" "
+    RCH=" "
 else
-    RCH=" "
+    RCH=""
 fi
 
 echo -e " $RCH $STR $BAT %"
